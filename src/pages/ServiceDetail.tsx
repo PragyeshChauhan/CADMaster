@@ -37,14 +37,14 @@ const ServiceDetail = () => {
   return (
     <div className="min-h-screen grid place-items-center">
       <div className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl font-bold">{service.title}</h2>
-        <p className="mt-4">{service.description}</p>
-        <p className="mt-4 text-lg">{service.moreInfo}</p>
+        <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{service.title}</h2>
+        <p className="mt-6 dark:text-gray-100">{service.description}</p>
+        <p className="mt-6 text-gray-600 dark:text-gray-300">{service.moreInfo}</p>
         
         {/* Back to Services button */}
         <button 
           onClick={handleBackClick} 
-          className="mt-8 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300"
+          className="mt-10 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300"
         >
            More Services
         </button>
