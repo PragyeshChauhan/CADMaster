@@ -1,44 +1,53 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Ruler, Cuboid as Cube, Building, Compass, Layers, Pencil, FileCheck, Workflow } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
+      id: '1',
       icon: Ruler,
       title: '2D CAD Drafting',
       description: 'Professional 2D drawings with precise measurements and detailed annotations.',
     },
     {
+      id: '2',
       icon: Cube,
       title: '3D Modeling',
       description: 'Photorealistic 3D models for visualization and manufacturing.',
     },
     {
+      id: '3',
       icon: Building,
       title: 'Architectural Design',
       description: 'Complete architectural plans and elevation drawings.',
     },
     {
+      id: '4',
       icon: Compass,
       title: 'Mechanical Design',
       description: 'Detailed mechanical parts and assembly drawings.',
     },
     {
+      id: '5',
       icon: Layers,
       title: 'BIM Services',
       description: 'Building Information Modeling for construction projects.',
     },
     {
+      id: '6',
       icon: Pencil,
       title: 'Custom Design',
       description: 'Tailored design solutions for unique project requirements.',
     },
     {
+      id: '7',
       icon: FileCheck,
       title: 'Documentation',
       description: 'Comprehensive technical documentation and specifications.',
     },
     {
+      id: '8',
       icon: Workflow,
       title: 'Workflow Optimization',
       description: 'CAD process automation and workflow improvements.',
@@ -56,18 +65,18 @@ const Services = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fadeIn">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
-                key={index}
+                key={service.id} // Use the service.id for the key
                 className="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 dark:hover:bg-slate-700"
               >
                 <div className="text-blue-600 dark:text-blue-400 mb-4">
                   <Icon size={40} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {service.title}
+                  <Link to={`/services/${service.id}`}>{service.title}</Link> {/* Link to the detail page */}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">{service.description}</p>
               </div>
