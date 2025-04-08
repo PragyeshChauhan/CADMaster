@@ -2,7 +2,7 @@
 
 Welcome to **CadMaster**, your one-stop destination for expert CAD drafting, 3D modeling, and architectural design. This website showcases professional design services with a clean, responsive interface, ideal for architects, engineers, and designers.
 
-🔗 **Live Demo**: [View Website](https://pragyeshchauhan.github.io/autocadewebsite/)
+🔗 **Live Demo**: [View Website](https://cadmaster.netlify.app/)
 
 ---
 
@@ -39,4 +39,4 @@ Complete architectural documentation, space planning, and construction-ready dra
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/pragyeshchauhan/autocadewebsite.git
+   git clone https://github.com/pragyeshchauhan/CADMaster.git
