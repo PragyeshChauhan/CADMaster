@@ -21,7 +21,8 @@ Complete architectural documentation, space planning, and construction-ready dra
 
 ## 🖼️ Preview
 
-![image](https://github.com/user-attachments/assets/4ad76cfe-7b6f-4ad2-ab33-62bfee3037b8)
+![image](https://github.com/user-attachments/assets/11323e6d-d9f8-475d-93f4-4d3bfff43368)
+
 
 
 ---
@@ -30,8 +31,8 @@ Complete architectural documentation, space planning, and construction-ready dra
 
 - HTML5
 - CSS3
-- JavaScript (vanilla)
-- Hosted on GitHub Pages
+- TypeScript
+- netlify
 
 ---
 
